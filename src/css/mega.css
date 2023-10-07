@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;1,100;1,400&display=swap");
+
+.ul-reset {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+/* #Navigation Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav {
+    background: #ffffff;
+    font-size: 0;
+    position: relative;
+    margin-top: 8px;
+}
+
+nav>ul>li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 72px;
+    position: relative;
+}
+
+nav>ul>li:first-child {
+    padding-left: 0;
+}
+
+nav>ul>li:last-child {
+    padding-right: 0;
+}
+
+nav>ul>li>a {
+    font-family: 'Inter',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+align-items: center;
+letter-spacing: 0.02em;
+color: #484848;
+    display: block;
+    position: relative;
+    padding: 12px 0;
+    border-bottom: 3px solid transparent;
+}
+
+nav>ul>li:hover>a {
+    color: #E95B1B;
+    border-bottom: 3px solid #E95B1B;
+}
+
+
+
+/* #Mega Menu Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mega-menu {
+    background: #ffffff;
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 1242px;
+    box-shadow: 0px 4px 20px rgba(72, 72, 72, 0.2);
+    padding: 11px 0px;
+    z-index: 9;
+}
+
+.mega-menu h3 {
+    font-family: 'Jost',sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+color: #484848;
+margin-bottom: 16px;
+}
+.mega-menu img{
+    margin-left: 0px !important;
+}
+.mega-menu ul {
+    float: left;
+    padding: 24px;
+    width: 294px;
+    border-right: 1px solid #DDDDDD;
+}
+
+.mega-menu ul:last-child {
+    margin-right: 0;
+}
+
+.mega-menu a {
+    display: block;
+    font-family: 'Jost',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+margin: 11px 0px;
+color: #767676;
+}
+
+.mega-menu a:hover {
+    color: #E95B1B;
+}
+
+
+
+/* #Droppable Class Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.droppable {
+    position: static;
+}
+
+.droppable>a:after {
+    font-size: 12px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+}
+
+.droppable:hover .mega-menu {
+    display: block;
+}
+
+.cf:before,
+.cf:after {
+    
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+.cf:after {
+    clear: both;
+}
